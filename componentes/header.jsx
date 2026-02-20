@@ -6,13 +6,13 @@ export default function Header(){
             <div className={estilos.cabezal}>
       <Image
         className={estilos.logo}
-        src="/pelilocos_icon.png"
-        alt="Pelilocos"
-        width={58}
-        height={58}
+        src="/CocinaComunitaria_logo.png"
+        alt="logo"
+        width={150}
+        height={90}
         priority
+        style={{ objectFit: "contain" }}
       />
-      <h1 className={estilos.titulo}>Pelilocos</h1>
     </div>
 )
 }

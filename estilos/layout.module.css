@@ -8,8 +8,9 @@
 }
 */
 .cabenav{
-  background: #ff3c00;
-  padding: 14px 0 0;
+  background-image: url("/ingredientes.png");
+  padding: 0;
+  margin: 0;
   border-bottom: 3px solid rgba(255,255,255,0.35);
 }
 
