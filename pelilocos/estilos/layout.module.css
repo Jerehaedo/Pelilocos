@@ -1,0 +1,39 @@
+/*
+.cabenav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;   
+    margin-right: 10%;
+}
+*/
+.cabenav{
+  background: #ff3c00;
+  padding: 14px 0 0;
+  border-bottom: 3px solid rgba(255,255,255,0.35);
+}
+
+/* contenedor ok */
+.contenedor{
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+/* FIX: faltaban unidades */
+.cuerpo{
+  margin: 0 10px;   /* o 0 10px 0 10px */
+}
+
+/* ✅ el sticky va acá */
+.barranav{
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+  /* CLAVE: fondo para que no se "mezcle" con el contenido */
+  background: #ff3c00;
+
+  /* opcional pero ayuda a notar que queda fijo */
+  /* box-shadow: 0 6px 12px rgba(0,0,0,0.12); */
+}

@@ -1,65 +1,29 @@
-import Image from "next/image";
+import { metadata } from "./layout"
 
-export default function Home() {
+export default function InicioPaginal(){
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div>
+      <div>
+        <h2>Bienvenidos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem temporibus ex non est, soluta assumenda magnam debitis ipsam iusto facere neque eaque earum nobis tenetur quibusdam quasi accusantium quia totam.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia incidunt facere eos quod accusamus numquam sequi, dignissimos aperiam iusto sunt suscipit culpa molestiae optio et commodi sint provident est laboriosam.</p>
+        <div>
+          <h3>Festivales y eventos</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae voluptatum maiores provident quaerat cumque? At voluptatibus vero ex temporibus harum magni! Nobis dignissimos, debitis quibusdam iste eveniet libero! Ab, incidunt?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo porro sunt nobis voluptas nesciunt totam voluptatem accusantium libero fugiat sint omnis assumenda dolorem error, adipisci fuga id quam culpa! Repellendus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum iure libero officia ipsum voluptas sunt porro pariatur, debitis excepturi, nihil dolore ea aliquam reprehenderit quisquam eligendi, dignissimos in error?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos porro quae asperiores aliquid fugit atque quos doloribus molestiae optio. Perspiciatis iste inventore impedit ipsum sint incidunt illo est magnam corrupti!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut dolorem accusamus iure labore. Molestias, sunt fuga nihil, nam aliquam repellat odit voluptates adipisci laboriosam enim, quam earum tempora dolores reprehenderit?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsum tempora accusantium eius vitae iusto facere, at in dolor quasi recusandae aliquid voluptatum ex voluptatibus numquam culpa dolorem officia magni.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolor, perspiciatis eaque unde, consequuntur officiis assumenda quae quaerat recusandae dolores soluta eius. Sit inventore fugit quo odit esse sed porro?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem, similique amet incidunt qui veniam! Tempore excepturi culpa similique officia numquam, autem quisquam quos ullam, non suscipit earum reiciendis? Aperiam!
           </p>
+          <img src="https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyL6kJ_m-B1Z-ua6bbZrLOmsD2qvxu97veBWSyajhREioQKVko7qJHn4Ml93UtZuF-AK4USwmtS2Nei05w2NjNoQzCX9iXwavHo-57oKVfFw__GFjVvGNKp9v8f8XHnkNg" alt="" />
+          <p></p>
+          <img src="https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Tk5UvzWCL2kpn2-DFk_OKherB0H_KfG2Kv0ed4u95lRi67gVNx4T-Bw434IHyVb1QlAsd1FOUDthG4xNznMu3m4QXXg90Wzn_33C1I8G81tLaDi_rK" alt="" />  
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </div>
     </div>
-  );
+  )
 }
+
