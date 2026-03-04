@@ -4,5 +4,5 @@ export default function NosotrosPagina(){
 
 
 export const metadata = {
-  title: 'Nosotros - Pelilocos',
+  title: 'Nosotros - Cocina Comunitaria',
 }

@@ -5,7 +5,7 @@ import "@/estilos/globals.css"
 import estilos from "@/estilos/layout.module.css"
 
 export const metadata = {
-  title: 'Inicio - Pelilocos',
+  title: 'Inicio - Cocina Comunitaria',
   description: 'Sitio de peliculas',
 }
 

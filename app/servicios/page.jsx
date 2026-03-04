@@ -4,5 +4,5 @@ export default function ServiciosPagina(){
 
 
 export const metadata = {
-  title: 'Servicios - Pelilocos',
+  title: 'Servicios - Cocina Comunitaria',
 }
