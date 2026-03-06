@@ -9,7 +9,7 @@
 .card {
   width: min(720px, 100%);
   background: #ffffffad;
-  border-top: 4px solid #da5111; /* línea celeste arriba */
+  border-top: 4px solid #da5111;
   padding: 24px;
 }
 
@@ -17,7 +17,7 @@
   margin: 0 0 18px 0;
   font-size: 32px;
   font-weight: 500;
-  color: #da5111; /* celeste como la imagen */
+  color: #da5111; 
 }
 
 .form {
@@ -46,7 +46,7 @@
   padding: 8px 10px;
   font-size: 14px;
   outline: none;
-  background: #f4f4f4; /* gris clarito */
+  background: #f4f4f4; 
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
@@ -84,3 +84,5 @@
 .button:active {
   transform: translateY(1px);
 }
+
+

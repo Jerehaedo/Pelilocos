@@ -18,9 +18,6 @@ export default function InicioPaginal(){
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolor, perspiciatis eaque unde, consequuntur officiis assumenda quae quaerat recusandae dolores soluta eius. Sit inventore fugit quo odit esse sed porro?
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem, similique amet incidunt qui veniam! Tempore excepturi culpa similique officia numquam, autem quisquam quos ullam, non suscipit earum reiciendis? Aperiam!
           </p>
-          <img src="https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Dx60noTyL6kJ_m-B1Z-ua6bbZrLOmsD2qvxu97veBWSyajhREioQKVko7qJHn4Ml93UtZuF-AK4USwmtS2Nei05w2NjNoQzCX9iXwavHo-57oKVfFw__GFjVvGNKp9v8f8XHnkNg" alt="" />
-          <p></p>
-          <img src="https://community.akamai.steamstatic.com/economy/image/i0CoZ81Ui0m-9KwlBY1L_18myuGuq1wfhWSaZgMttyVfPaERSR0Wqmu7LAocGIGz3UqlXOLrxM-vMGmW8VNxu5Tk5UvzWCL2kpn2-DFk_OKherB0H_KfG2Kv0ed4u95lRi67gVNx4T-Bw434IHyVb1QlAsd1FOUDthG4xNznMu3m4QXXg90Wzn_33C1I8G81tLaDi_rK" alt="" />  
         </div>
       </div>
     </div>
