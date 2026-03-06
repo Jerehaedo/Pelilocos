@@ -6,8 +6,8 @@ export default function NavBar(){
       <div className={estilo.nav}>
         <ul>
           <li><Link className={estilo.navLink} href="/">Inicio</Link></li>
-          <li><Link className={estilo.navLink} href="/contacto">Contacto</Link></li>
-          <li><Link className={estilo.navLink} href="/nosotros">Nosotros</Link></li>
           <li><Link className={estilo.navLink} href="/servicios">Servicios</Link></li> 
+          <li><Link className={estilo.navLink} href="/nosotros">Nosotros</Link></li>
+          <li><Link className={estilo.navLink} href="/contacto">Contacto</Link></li>
         </ul>
       </div>)}

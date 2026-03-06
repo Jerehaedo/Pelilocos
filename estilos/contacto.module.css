@@ -34,11 +34,12 @@
 
 .label {
   font-size: 14px;
-  color: #8a8a8a;
+  color: #000000;
 }
 
 .input,
 .textarea {
+  color: #000;
   width: 95%;
   border: 1px solid #a9a9a9;
   border-radius: 4px;
