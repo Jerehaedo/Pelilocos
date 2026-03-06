@@ -1,26 +1,74 @@
-import { metadata } from "./layout"
+import Image from "next/image";
+import estilos from "@/estilos/inicio.module.css";
 
-export default function InicioPaginal(){
+export default function InicioPagina() {
   return (
-    <div>
-      <div>
-        <h2>Bienvenidos</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem temporibus ex non est, soluta assumenda magnam debitis ipsam iusto facere neque eaque earum nobis tenetur quibusdam quasi accusantium quia totam.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia incidunt facere eos quod accusamus numquam sequi, dignissimos aperiam iusto sunt suscipit culpa molestiae optio et commodi sint provident est laboriosam.</p>
-        <div>
-          <h3>Festivales y eventos</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae voluptatum maiores provident quaerat cumque? At voluptatibus vero ex temporibus harum magni! Nobis dignissimos, debitis quibusdam iste eveniet libero! Ab, incidunt?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo porro sunt nobis voluptas nesciunt totam voluptatem accusantium libero fugiat sint omnis assumenda dolorem error, adipisci fuga id quam culpa! Repellendus?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum iure libero officia ipsum voluptas sunt porro pariatur, debitis excepturi, nihil dolore ea aliquam reprehenderit quisquam eligendi, dignissimos in error?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos porro quae asperiores aliquid fugit atque quos doloribus molestiae optio. Perspiciatis iste inventore impedit ipsum sint incidunt illo est magnam corrupti!
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut dolorem accusamus iure labore. Molestias, sunt fuga nihil, nam aliquam repellat odit voluptates adipisci laboriosam enim, quam earum tempora dolores reprehenderit?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsum tempora accusantium eius vitae iusto facere, at in dolor quasi recusandae aliquid voluptatum ex voluptatibus numquam culpa dolorem officia magni.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolor, perspiciatis eaque unde, consequuntur officiis assumenda quae quaerat recusandae dolores soluta eius. Sit inventore fugit quo odit esse sed porro?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem, similique amet incidunt qui veniam! Tempore excepturi culpa similique officia numquam, autem quisquam quos ullam, non suscipit earum reiciendis? Aperiam!
+    <main className={estilos.page}>
+      <section className={estilos.hero}>
+        <div className={estilos.heroText}>
+          <h1 className={estilos.title}>Bienvenidos a Cocina Comunitaria</h1>
+          <p className={estilos.description}>
+            Un espacio donde la cocina se comparte, las recetas se disfrutan y
+            cada mes una preparación especial se convierte en la favorita de la
+            comunidad.
           </p>
         </div>
-      </div>
-    </div>
-  )
-}
+      </section>
 
+      <section className={estilos.card}>
+        <h2 className={estilos.subtitle}>Receta destacada del mes</h2>
+
+        <div className={estilos.featuredRecipe}>
+          <div className={estilos.imageBox}>
+            <Image
+              src="/tarta_verduras.jpg"
+              alt="Receta destacada del mes"
+              width={420}
+              height={280}
+              className={estilos.recipeImage}
+            />
+          </div>
+
+          <div className={estilos.recipeInfo}>
+            <h3 className={estilos.recipeTitle}>Tarta de verduras casera</h3>
+            <p className={estilos.author}>Por Elizabeth González</p>
+
+            <p className={estilos.text}>
+              Esta receta fue elegida como la favorita del mes por su sabor,
+              su simpleza y porque representa muy bien el espíritu de Cocina
+              Comunitaria: platos caseros, ricos y hechos para compartir.
+            </p>
+
+            <div className={estilos.ingredientsBox}>
+              <h4>Ingredientes principales</h4>
+              <ul className={estilos.ingredientsList}>
+                <li>Cebolla</li>
+                <li>Morrón</li>
+                <li>Acelga</li>
+                <li>Huevos</li>
+                <li>Queso rallado</li>
+                <li>Masa para tarta</li>
+              </ul>
+            </div>
+
+            <button className={estilos.button}>Ver receta completa</button>
+          </div>
+        </div>
+      </section>
+
+      <section className={estilos.card}>
+        <h2 className={estilos.subtitle}>¿Querés participar?</h2>
+        <p className={estilos.text}>
+          En nuestra comunidad cualquiera puede compartir su receta. Podés
+          enviarnos tus preparaciones por mail con una breve descripción, los
+          ingredientes y, si querés, una foto del plato terminado.
+        </p>
+        <p className={estilos.text}>
+          Cada mes seleccionamos una receta destacada para mostrarla en la
+          página principal y sumar nuevas ideas a nuestra cocina compartida.
+        </p>
+        <p className={estilos.mail}>contacto@cocinacomunitaria.com</p>
+      </section>
+    </main>
+  );
+}
