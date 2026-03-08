@@ -13,32 +13,25 @@ export default function ContactoPagina() {
     comentario: "",
   });
 
-  // cargar lo guardado al abrir
+
   useEffect(() => {
     const guardados = JSON.parse(localStorage.getItem("contactos") || "[]");
     setContactos(guardados);
   }, []);
 
-  function handleChange(e) {
-    const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
+  function guardarEnObj(e) {
+    setForm((formprev) => ({ ...formprev, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e) {
+  function enviarForm(e) {
     e.preventDefault();
- 
-    const nuevo = {
-      id: Date.now(),
-      ...form,
-    };
 
-    setContactos((prev) => {
-      const next = [...prev, nuevo];
-      // guardar como JSON en localStorage
-      localStorage.setItem("contactos", JSON.stringify(next, null, 2));
-      return next;
+    setContactos((arrayprev) => {
+      const nuevoobj = { id: arrayprev.length + 1, ...form };
+      const proximo = [...arrayprev, nuevoobj];
+      localStorage.setItem("contactos", JSON.stringify(proximo, null, 2));
+      return proximo;
     });
-    console.log(contactos);
     alert("¡Enviado!");
     setForm({ nombre: "", email: "", telefono: "", comentario: "" });
   }
@@ -48,7 +41,7 @@ export default function ContactoPagina() {
       <section className={estilos.card}>
         <h1 className={estilos.title}>Contacte con nosotros :D</h1>
 
-        <form className={estilos.form} onSubmit={handleSubmit}>
+        <form className={estilos.form} onSubmit={enviarForm}>
           <div className={estilos.grid}>
             <label className={estilos.label} htmlFor="nombre">Nombre</label>
             <input
@@ -57,7 +50,7 @@ export default function ContactoPagina() {
               type="text"
               name="nombre"
               value={form.nombre}
-              onChange={handleChange}
+              onChange={guardarEnObj}
               required
             />
 
@@ -68,7 +61,7 @@ export default function ContactoPagina() {
               type="email"
               name="email"
               value={form.email}
-              onChange={handleChange}
+              onChange={guardarEnObj}
               required
             />
 
@@ -79,7 +72,7 @@ export default function ContactoPagina() {
               type="tel"
               name="telefono"
               value={form.telefono}
-              onChange={handleChange}
+              onChange={guardarEnObj}
               required
             />
 
@@ -90,7 +83,7 @@ export default function ContactoPagina() {
               name="comentario"
               rows={6}
               value={form.comentario}
-              onChange={handleChange}
+              onChange={guardarEnObj}
               required
             />
           </div>

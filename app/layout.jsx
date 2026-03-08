@@ -13,14 +13,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es-ar">
       <body>
-        {/* Header normal (no sticky) */}
         <header className={estilos.cabenav}>
           <div className={estilos.contenedor}>
             <Header />
           </div>
         </header>
 
-        {/* Nav sticky (se queda fijo al scrollear) */}
         <div className={estilos.barranav}>
           <div className={estilos.contenedor}>
             <NavBar />
