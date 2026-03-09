@@ -5,7 +5,7 @@
     margin-top: 1em;
 
     display: flex;
-    justify-content: space-between; /* separa izquierda y derecha */
+    justify-content: space-between; 
     align-items: center;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .contacto {
-    list-style: none; /* saca los puntitos */
+    list-style: none; 
     margin: 0;
     padding: 0;
     text-align: right;
